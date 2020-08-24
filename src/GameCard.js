@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
     root: {
@@ -39,12 +40,12 @@ function GameCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Share
-        </Button>
+                <Link to={`/games/${name}`} size="small" color="primary">
+                    Details
+                </Link>
                 <Button size="small" color="primary">
                     Learn More
-        </Button>
+                </Button>
             </CardActions>
         </Card>
     );
