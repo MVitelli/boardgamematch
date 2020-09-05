@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GameCard from './GameCard';
+import GameCardAlternative from './GameCardAlternative';
 
 class Main extends Component {
     constructor(props) {
@@ -34,7 +35,7 @@ class Main extends Component {
             return (
                 <div key={index}>
                     <br ></br>
-                    <GameCard gameInfo={game}></GameCard>
+                    <GameCardAlternative gameInfo={game}></GameCardAlternative>
                 </div>
             )
         })
@@ -42,3 +43,4 @@ class Main extends Component {
 }
 
 export default Main;
+
